@@ -7,39 +7,50 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: c0c0c0;
+            background-color: #c0c0c0;
             color: #fff; /* Set default text color to white */
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
         }
         header {
             background-color: #333;
             color: #fff;
             padding: 10px 0;
             text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
         }
         main {
             padding: 20px;
+            max-width: 800px; /* Limit width of content */
         }
         .section {
             margin-bottom: 20px;
-            color: #fff; /* Set text color to white for sections */
         }
         .section h2 {
             border-bottom: 2px solid #333;
             padding-bottom: 5px;
+            color: #fff; /* Set text color to white for headings */
         }
         .section p, .section ul {
-            color: #000000; /* Set text color to white for paragraphs and lists */
+            color: #000; /* Set text color to black for paragraphs and lists */
         }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
             width: 100%;
+            position: fixed;
             bottom: 0;
+            left: 0;
         }
     </style>
 </head>
