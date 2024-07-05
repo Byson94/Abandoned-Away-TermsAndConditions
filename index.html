@@ -14,43 +14,39 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            text-align: center;
+            height: 100vh; /* Ensure full viewport height */
         }
         header {
             background-color: #333;
             color: #fff;
             padding: 10px 0;
             text-align: center;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
         }
         main {
             padding: 20px;
-            max-width: 800px; /* Limit width of content */
+            max-width: 800px; /* Example max-width for content */
+            width: 100%; /* Ensure content stretches within max-width */
+            margin: 0 20px; /* Adjust margin to create space from sides */
         }
         .section {
             margin-bottom: 20px;
+            color: #fff; /* Set text color to white for sections */
         }
         .section h2 {
             border-bottom: 2px solid #333;
             padding-bottom: 5px;
-            color: #fff; /* Set text color to white for headings */
         }
         .section p, .section ul {
-            color: #000; /* Set text color to black for paragraphs and lists */
+            color: #000000; /* Set text color to black for paragraphs and lists */
         }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            width: 100%;
             position: fixed;
+            width: 100%;
             bottom: 0;
-            left: 0;
         }
     </style>
 </head>
@@ -61,7 +57,7 @@
     </header>
     <main>
         <div class="section">
-            <br> <br> <br> <br> <h2>Welcome to Cosmic Outpost</h2>
+            <br> <br> <br> <br> <br> <br> <br> <h2>Welcome to Cosmic Outpost</h2>
             <p>Cosmic Outpost is an exciting game where you can explore a different planet, gather resources, and build your outpost. Join us on this interstellar adventure!</p>
         </div>
         <div class="section">
