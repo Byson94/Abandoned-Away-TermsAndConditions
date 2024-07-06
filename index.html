@@ -112,6 +112,20 @@
         .back-to-top a:hover {
             background-color: #c3924a;
         }
+        .download-button {
+            background-color: #dda15e;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .download-button:hover {
+            background-color: #c3924a;
+        }
         @media (max-width: 768px) {
             nav ul {
                 display: flex;
@@ -225,18 +239,11 @@
         </div>
         <div class="section" id="getthegame">
             <h2>Get the Game</h2>
-            <p>Download Cosmic Outpost and embark on your interstellar adventure today!</p>
-            <a href="https://byson94.github.io/Cosmic-outpost-download/" class="back-to-top">Download Now</a>
+            <button class="download-button"><a href="https://byson94.github.io/Cosmic-outpost-download/">Download Now</a></button>
         </div>
     </main>
     <footer>
-        <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#terms">Terms and Conditions</a>
-            <a href="#contact">Contact</a>
-            <a href="#getthegame">Get the Game</a>
-        </div>
-        <p>&copy; 2024 Cosmic Outpost. All rights reserved. Developed by Byson94.</p>
+        <p>&copy; 2024 Cosmic Outpost. All rights reserved. | <span class="footer-links"><a href="#home">Home</a> | <a href="#terms">Terms and Conditions</a> | <a href="#contact">Contact</a> | <a href="#getthegame">Get the Game</a></span></p>
     </footer>
 </body>
 </html>
