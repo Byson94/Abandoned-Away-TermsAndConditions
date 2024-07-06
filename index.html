@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmic Outpost</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+        
         body {
-            font-family: Arial, sans-serif;
-            background-color: c0c0c0;
-            color: #fff; /* Set default text color to white */
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f9f9f9; /* Light grey background */
+            color: #333; /* Dark grey text color */
             margin: 0;
-            padding: 0;
+            padding: 0 20px;
+            line-height: 1.6;
         }
         header {
             background-color: #333;
@@ -19,29 +22,41 @@
             text-align: center;
         }
         main {
-            margin: 0 auto;
+            max-width: 800px;
+            margin: 20px auto; /* Center the content */
             padding: 20px;
-            margin-left: 20px; /* Adjust this value to move content forward */
+            background-color: #fff; /* White background for main content */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .section {
             margin-bottom: 20px;
-            color: #fff; /* Set text color to white for sections */
         }
         .section h2 {
-            border-bottom: 2px solid #333;
+            font-size: 1.5em;
+            color: #333;
+            border-bottom: 2px solid #dda15e; /* Accent color */
             padding-bottom: 5px;
         }
         .section p, .section ul {
-            color: #000000; /* Set text color to white for paragraphs and lists */
+            margin: 10px 0;
+        }
+        .section ul {
+            padding-left: 20px;
         }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
+            position: relative; /* Changed to relative for standard footer positioning */
             width: 100%;
-            bottom: 0;
+            margin-top: 20px;
+        }
+        .divider {
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -55,6 +70,7 @@
             <h2>Welcome to Cosmic Outpost</h2>
             <p>Cosmic Outpost is an exciting game where you can explore a different planet, gather resources, and build your outpost. Join us on this interstellar adventure!</p>
         </div>
+        <div class="divider"></div>
         <div class="section">
             <h2>Terms and Conditions</h2>
             <p>Welcome to Cosmic Outpost, a game developed by Byson94. These terms and conditions ("Terms") govern your use of the game. By accessing or playing Cosmic Outpost, you agree to comply with and be bound by these Terms. If you do not agree with these Terms, please do not use the game. These terms and conditions will only take about 1 minute to read, please feel free to read it.</p>
