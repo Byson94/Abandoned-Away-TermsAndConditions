@@ -9,7 +9,7 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #c0c0c0;
-            color: #fff;
+            color: #333;
             margin: 0;
             padding: 0;
             scroll-behavior: smooth;
@@ -53,7 +53,7 @@
         }
 
         .section h2 {
-            border-bottom: 2px solid #333;
+            border-bottom: 2px solid #dda15e;
             padding-bottom: 5px;
         }
 
@@ -94,6 +94,12 @@
                 margin: 0 10px;
                 font-size: 14px;
             }
+        }
+
+        /* Orange underline for headers */
+        h1, h2 {
+            border-bottom: 2px solid #dda15e;
+            padding-bottom: 10px;
         }
     </style>
 </head>
@@ -162,7 +168,7 @@
                 <li>The specific jurisdiction governing these Terms is not disclosed.</li>
             </ul>
             <p><strong>Contact Information:</strong></p>
-            <p>For questions or concerns regarding these Terms, please contact us at Byson94@outlook.com.</p> <br> <br> <br>
+            <p>For questions or concerns regarding these Terms, please contact us at Byson94@outlook.com.</p>
         </div>
     </main>
     <footer>
@@ -178,12 +184,12 @@
         document.querySelector('nav a[href="#terms"]').addEventListener('click', function (e) {
             e.preventDefault();
             document.querySelector('#terms').scrollIntoView({ behavior: 'smooth' });
-            window.scrollBy(0, -20); // Adjust this value as needed to make the heading fully visible
+            setTimeout(() => window.scrollBy(0, -20), 500); // Adjust scroll position to make heading visible
         });
 
         document.querySelector('nav a[href="#top"]').addEventListener('click', function (e) {
             e.preventDefault();
-            document.querySelector('#top').scrollIntoView({ behavior: 'smooth' });
+            scrollToTop();
         });
     </script>
 </body>
