@@ -113,7 +113,7 @@
             background-color: #c3924a;
         }
         .download-button {
-            background-color: #dda15e;
+            background-color: #ffa500;
             color: #fff;
             padding: 10px 20px;
             text-decoration: none;
@@ -121,10 +121,10 @@
             border-radius: 5px;
             cursor: pointer;
             display: inline-block;
-            margin-top: 10px;
+            transition: background-color 0.3s;
         }
         .download-button:hover {
-            background-color: #c3924a;
+            background-color: #ff8c00;
         }
         @media (max-width: 768px) {
             nav ul {
@@ -239,11 +239,25 @@
         </div>
         <div class="section" id="getthegame">
             <h2>Get the Game</h2>
-            <button class="download-button" id = "downloadButton">href="https://byson94.github.io/Cosmic-outpost-download/">Download Now</a></button>
+            <p>Download Cosmic Outpost and embark on your interstellar adventure today!</p>
+            <button class="download-button" id="downloadButton">Download Now</button>
         </div>
     </main>
     <footer>
-        <p>&copy; 2024 Cosmic Outpost. All rights reserved. | <span class="footer-links"><a href="#home">Home</a> | <a href="#terms">Terms and Conditions</a> | <a href="#contact">Contact</a> | <a href="#getthegame">Get the Game</a></span></p>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#terms">Terms and Conditions</a>
+            <a href="#contact">Contact</a>
+            <a href="#getthegame">Get the Game</a>
+        </div>
+        <p>&copy; 2024 Cosmic Outpost. All rights reserved. Developed by Byson94.</p>
     </footer>
+
+    <script>
+        // JavaScript to handle button click
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            window.location.href = 'https://byson94.github.io/Cosmic-outpost-download/';
+        });
+    </script>
 </body>
 </html>
