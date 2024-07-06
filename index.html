@@ -9,8 +9,8 @@
         
         body {
             font-family: 'Open Sans', sans-serif;
-            background-color: #f9f9f9; /* Light grey background */
-            color: #333; /* Dark grey text color */
+            background-color: #f9f9f9;
+            color: #333;
             margin: 0;
             padding: 0 20px;
             line-height: 1.6;
@@ -24,6 +24,9 @@
         nav {
             background-color: #444;
             overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav ul {
             list-style-type: none;
@@ -47,9 +50,9 @@
         }
         main {
             max-width: 800px;
-            margin: 20px auto; /* Center the content */
+            margin: 20px auto;
             padding: 20px;
-            background-color: #fff; /* White background for main content */
+            background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -59,7 +62,7 @@
         .section h2 {
             font-size: 1.5em;
             color: #333;
-            border-bottom: 2px solid #dda15e; /* Accent color */
+            border-bottom: 2px solid #dda15e;
             padding-bottom: 5px;
         }
         .section p, .section ul {
@@ -73,7 +76,7 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: relative; /* Changed to relative for standard footer positioning */
+            position: relative;
             width: 100%;
             margin-top: 20px;
         }
@@ -104,6 +107,42 @@
         }
         .back-to-top a:hover {
             background-color: #c3924a;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                display: block;
+                width: 100%;
+            }
+            nav a {
+                padding: 10px;
+                border-top: 1px solid #555;
+                border-bottom: 1px solid #333;
+            }
+            .section h2 {
+                font-size: 1.25em;
+            }
+            .section p, .section ul {
+                font-size: 0.9em;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                padding: 0 10px;
+            }
+            main {
+                padding: 15px;
+            }
+            .section h2 {
+                font-size: 1.1em;
+            }
+            .section p, .section ul {
+                font-size: 0.85em;
+            }
         }
     </style>
 </head>
@@ -177,22 +216,25 @@
             <p>For questions or concerns regarding these Terms, please contact us at Byson94@outlook.com.</p>
         </div>
         <div id="contact" class="section">
-            <h2>Contact</h2>
-            <p>If you have any questions or concerns, please reach out to us at Byson94@outlook.com.</p>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need support, feel free to contact us at Byson94@outlook.com.</p>
         </div>
         <div id="getthegame" class="section">
             <h2>Get the Game</h2>
-            <p>The game is currently under development and will be available soon. Stay tuned!</p>
+            <p>Download Cosmic Outpost and embark on your interstellar adventure today!</p>
+            <a href="https://example.com/download" class="back-to-top">Download Now</a>
         </div>
         <div class="back-to-top">
-            <a href="#">Back to Top</a>
+            <a href="#home">Back to Top</a>
         </div>
     </main>
     <footer>
-        <p>&copy; 2024 Byson94. All rights reserved.</p>
+        <p>Cosmic Outpost &copy; 2024 Byson94</p>
         <div class="footer-links">
+            <a href="#home">Home</a>
             <a href="#terms">Terms and Conditions</a>
-            <a href="#contact">Contact Us</a>
+            <a href="#contact">Contact</a>
+            <a href="#getthegame">Get the Game</a>
         </div>
     </footer>
 </body>
