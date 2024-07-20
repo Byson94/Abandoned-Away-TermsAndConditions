@@ -7,3 +7,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.head.appendChild(link);
 });
+//I hope it works, last time didnt.
