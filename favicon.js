@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     link.type = 'image/png';
     link.href = 'https://raw.githubusercontent.com/Byson94/Lonely-Orbit-TermsAndConditions/main/Icon.png';
 
-//hope its linked
+//adding new texts to reload progress
     if (document.head) {
         document.head.appendChild(link);
         console.log("Favicon link added to the head"); // Debugging line
